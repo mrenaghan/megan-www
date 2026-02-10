@@ -12,3 +12,6 @@ html,
 body {
   overscroll-behavior: none;
 }
+.bg-primary{
+background-color: #161614;
+}
