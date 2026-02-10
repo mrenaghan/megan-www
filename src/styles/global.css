@@ -8,3 +8,7 @@
 * {
   font-variant-numeric: tabular-nums;
 }
+html,
+body {
+  overscroll-behavior: none;
+}
