@@ -1,17 +1,18 @@
 ---
+import BaseLayout from "../layouts/BaseLayout.astro";
 const title = "Glider Design";
 ---
-
-<section class="px-8 py-32 max-w-4xl mx-auto">
-  <h1 class="text-4xl font-bold mb-4">{title}</h1>
-  <p class="text-xl">
-    Drew up plans and modeled glider design in AERY. Constraints were given for inputs 
-    such as wing span, fuselage length, and vertical stabilizer location. I then built the 
-    glider using the AERY software printout of plans, wood, glue, and modeling clay. We 
-    conducted 10 test flights and graded the glider design based off of aerodynamic 
-    characteristics, and appearance and durability. 
-
-</section>
-<img src="/screenshot8.png" alt="My image" />
-<img src="/screenshot9.png" alt="My image" />
-
+<BaseLayout>
+	<section class="px-8 py-32 max-w-4xl mx-auto">
+	  <h1 class="text-4xl text-secondary font-bold mb-4">{title}</h1>
+	  <p class="text-xl text-secondary mmb-10">
+		Drew up plans and modeled glider design in AERY. Constraints were given for inputs 
+		such as wing span, fuselage length, and vertical stabilizer location. I then built the 
+		glider using the AERY software printout of plans, wood, glue, and modeling clay. We 
+		conducted 10 test flights and graded the glider design based off of aerodynamic 
+		characteristics, and appearance and durability. 
+<img src="/screenshot8.png" alt="grading" />
+<img src="/screenshot9.png" alt="flight_data" />
+	</section>
+	
+<BaseLayout>

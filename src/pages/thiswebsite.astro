@@ -1,20 +1,15 @@
 ---
+import BaseLayout from "../layouts/BaseLayout.astro";
 const title = "This website";
 ---
+<BaseLayout>
+	<section class="px-8 py-32 max-w-4xl mx-auto">
+	  <h1 class="text-4xl text-secondary font-bold mb-4">{title}</h1>
+	  <p class="text-xl text-secondary mmb-10">
+		Designed using BBEdit, Astro, Tower, HTML, CSS,
+        <a class="hover:text-alternate text-secondary duration-200 font-bold"
+			href="https://github.com/mrenaghan">GitHub</a>, and Terminal.</p>
+		<img src="/screenshot11.png" alt="bbedit" />
+	</section>
 
-<section class="px-8 py-32 max-w-4xl mx-auto">
-  <h1 class="text-4xl font-bold mb-4">{title}</h1>
-  <p class="text-xl">
-    Designed using BBEdit, Astro, Tower, HTML, CSS,
-<span class="text-xs font-medium text-secondary flex ml-auto"
- ></span 
-	> &nbsp; <a
-            class="hover:text-alternate text-secondary duration-200 font-bold"
-            href="https://github.com/mrenaghan">GitHub</a
-         
-  <p class="text-xl"> 
-, and Terminal.
-    
-  </p>
-</section>
-<img src="/screenshot10.png" alt="My image" />
+<BaseLayout>

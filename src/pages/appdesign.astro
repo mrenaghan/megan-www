@@ -1,27 +1,29 @@
 ---
+import BaseLayout from "../layouts/BaseLayout.astro";
 const title = "Code Studio Movie Recommendation App";
 
 ---
-
-<section class="px-8 py-32 max-w-4xl mx-auto">
-  <h1 class="text-4xl font-bold mb-4">{title}</h1>
-  <p class="text-xl">
-    I created a movie recommendation app based off of the user's choice of genre and a 
-    popular movie in that genre they enjoyed. There are six genre options: thriller, 
-    mystery, comedy, romance, fantasy, and sci-fi. Each of these genres has images of 
-    four popular movies, and once the user selects one, the user is taken to a screen with four 
-    similar, but lesser-known movies. These lesser-known movies are the recommendations 
-    for the user. The app features back buttons to bring the user to the previous screen. 
-    This feature improves user accessibility so users do not have to completely restart 
-    the app. I used JavaScript to code the entirety of the app. Even though this was a
-    class project, I have used this app numerous times in my personal life. When you think
-    you've seen every movie, this app introduces you to ones you haven't even heard of. 
-    With the large selection of genres, the app gives a total of 96 recommendations.
-
-  </p>
-</section>
-<img src="/screenshot.png" alt="My image" />
-<img src="/screenshot2.png" alt="My image" />
-<img src="/screenshot3.png" alt="My image" />
-
+<BaseLayout>
+	<section class="px-8 py-32 max-w-4xl mx-auto">
+	  <h1 class="text-4xl text-secondary font-bold mb-4">{title}</h1>
+	  <p class="text-xl text-secondary mmb-10">
+		I created a movie recommendation app based off of the user's choice of genre and a 
+		popular movie in that genre they enjoyed. There are six genre options: thriller, 
+		mystery, comedy, romance, fantasy, and sci-fi. Each of these genres has images of 
+		four popular movies, and once the user selects one, the user is taken to a screen with four 
+		similar, but lesser-known movies. These lesser-known movies are the recommendations 
+		for the user. The app features back buttons to bring the user to the previous screen. 
+		This feature improves user accessibility so users do not have to completely restart 
+		the app. I used JavaScript to code the entirety of the app. Even though this was a
+		class project, I have used this app numerous times in my personal life. When you think
+		you've seen every movie, this app introduces you to ones you haven't even heard of. 
+		With the large selection of genres, the app gives a total of 96 recommendations.
+	
+	  </p>
+	  <img src="/screenshot.png" alt="app_genre" />
+	<img src="/screenshot2.png" alt="app_movie" />
+	<img src="/screenshot3.png" alt="app_rec" />
+	</section>
+	
+<BaseLayout>
 

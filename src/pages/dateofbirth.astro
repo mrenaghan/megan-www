@@ -1,27 +1,27 @@
 ---
+import BaseLayout from "../layouts/BaseLayout.astro";
 const title = "Date of Birth Seven-Segment Display";
 ---
 
-<section class="px-8 py-32 max-w-4xl mx-auto">
-  <h1 class="text-4xl font-bold mb-4">{title}</h1>
-  <p class="text-xl">
-    I started off by creating a truth table for my birthday. This allowed me to 
-    figure out each input for my seven-segment displays. I did mess this up, as I 
-    realized later in the project when some of the displays weren't turning on at 
-    the right times, but I went back in and fixed it. I then moved on to creating a 
-    K-map for each of the displays, and created the simplified boolean expressions 
-    for each of the seven-segment display inputs. Then, I mapped out the circuits in 
-    AOI form, which allowed me to see which gates I could simplify into XNOR and NOR. 
-    I built my simplified circuits in Multisim, using bus lines which made everything 
-    very simple. After creating the digital circuit, we constructed it in person on a 
-    breadboard! 
-
-  </p>
-</section>
-<img src="/screenshot4.png" alt="My image" />
-<img src="/screenshot5.png" alt="My image" />
-<img src="/screenshot6.png" alt="My image" />
-<img src="/screenshot7.png" alt="My image" />
-
-
-
+<BaseLayout>
+	<section class="px-8 py-32 max-w-4xl mx-auto">
+	  <h1 class="text-4xl text-secondary font-bold mb-4">{title}</h1>
+	  <p class="text-xl text-secondary mmb-10">
+		I started off by creating a truth table for my birthday. This allowed me to 
+		figure out each input for my seven-segment displays. I did mess this up, as I 
+		realized later in the project when some of the displays weren't turning on at 
+		the right times, but I went back in and fixed it. I then moved on to creating a 
+		K-map for each of the displays, and created the simplified boolean expressions 
+		for each of the seven-segment display inputs. Then, I mapped out the circuits in 
+		AOI form, which allowed me to see which gates I could simplify into XNOR and NOR. 
+		I built my simplified circuits in Multisim, using bus lines which made everything 
+		very simple. After creating the digital circuit, we constructed it in person on a 
+		breadboard!
+	  </p>
+	<img src="/screenshot4.png" alt="truth_table" />
+	<img src="/screenshot5.png" alt="kmap" />
+	<img src="/screenshot6.png" alt="hand_circuit" />
+	<img src="/screenshot7.png" alt="multisim_circuit" />
+	</section>
+	
+</BaseLayout>
