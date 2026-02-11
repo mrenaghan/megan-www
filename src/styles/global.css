@@ -15,3 +15,11 @@ body {
 .bg-primary{
 background-color: #161614;
 }
+.text-megan {
+            font-size:72pt;
+            line-height: var(--tw-leading, var(--text-4xl--line-height));
+        }
+        
+.mt-megan {
+margin-top:40pt
+}
